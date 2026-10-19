@@ -1,0 +1,1133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Gales of '75 - Welcome!</title>
+
+<style>
+
+/* GENERAL WEBSITE */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #677b91;
+    background-image:
+        repeating-linear-gradient(
+            45deg,
+            #657b91 0px,
+            #657b91 2px,
+            #71869c 2px,
+            #71869c 4px
+        );
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+a {
+    color: #0000cc;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: red;
+}
+
+.website {
+    width: 800px;
+    max-width: 100%;
+    margin: 15px auto;
+    background: #c0c0c0;
+    border: 3px outset #eeeeee;
+    box-shadow: 5px 5px 0px #283c50;
+}
+
+/* TOP WINDOWS STYLE BAR */
+
+.titlebar {
+    background: linear-gradient(90deg,#000080,#1084d0);
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.winbuttons span {
+    background: #c0c0c0;
+    color: black;
+    padding: 1px 5px;
+    border: 2px outset white;
+    margin-left: 2px;
+}
+
+/* HEADER */
+
+.header {
+    background: #ffffff;
+    padding: 18px;
+    text-align: center;
+    border-bottom: 4px ridge #888;
+}
+
+.header h1 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    color: #002b65;
+    margin: 5px;
+    text-shadow: 2px 2px #a8c5e5;
+}
+
+.header h2 {
+    font-size: 14px;
+    color: #555;
+    letter-spacing: 3px;
+}
+
+.header .anchor {
+    font-size: 30px;
+}
+
+.topnav {
+    background: #c0c0c0;
+    padding: 7px;
+    border-bottom: 3px ridge white;
+    text-align: center;
+}
+
+.topnav button,
+.navbutton,
+.oldbutton {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    background: #c0c0c0;
+    border: 2px outset white;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: black;
+}
+
+.topnav button:active,
+.navbutton:active,
+.oldbutton:active {
+    border-style: inset;
+}
+
+/* ANNOUNCEMENT */
+
+.announcement {
+    background: #000080;
+    color: yellow;
+    padding: 5px;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+/* WEBSITE COLUMNS */
+
+.layout {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    background: white;
+}
+
+/* LEFT SIDEBAR */
+
+.sidebar {
+    background: #d4d4d4;
+    border-right: 3px ridge #888;
+    padding: 8px;
+}
+
+.sideheader {
+    background: #000080;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 7px;
+}
+
+.navbutton {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.navbutton:hover {
+    background: #dedede;
+}
+
+.sidebox {
+    background: #eeeeee;
+    border: 2px inset white;
+    padding: 7px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.sidebox h4 {
+    margin: 3px 0;
+    color: navy;
+}
+
+.counter {
+    display: inline-block;
+    background: black;
+    color: lime;
+    font-family: monospace;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 4px;
+    border: 2px inset gray;
+}
+
+.new {
+    color: red;
+    font-weight: bold;
+    animation: blink 1s steps(2) infinite;
+}
+
+@keyframes blink {
+    50% { visibility: hidden; }
+}
+
+/* MAIN CONTENT */
+
+.main {
+    background: white;
+    padding: 15px;
+    min-height: 550px;
+}
+
+.main h2 {
+    background: #003b87;
+    color: white;
+    font-size: 17px;
+    padding: 6px;
+    margin-top: 0;
+    border-bottom: 3px solid #7ba6d9;
+}
+
+.main h3 {
+    color: #003b87;
+    font-size: 15px;
+    border-bottom: 1px solid #aaa;
+}
+
+.main p {
+    line-height: 1.5;
+}
+
+.box {
+    border: 2px ridge #aaa;
+    background: #f1f1f1;
+    padding: 10px;
+    margin: 12px 0;
+}
+
+.box-title {
+    background: #000080;
+    color: white;
+    padding: 4px;
+    font-weight: bold;
+    margin: -10px -10px 10px;
+}
+
+.shipphoto {
+    width: 100%;
+    max-width: 440px;
+    display: block;
+    margin: 12px auto;
+    border: 4px ridge #aaa;
+}
+
+.caption {
+    text-align: center;
+    color: #555;
+    font-size: 11px;
+}
+
+.info {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.info td {
+    border: 1px solid #888;
+    padding: 6px;
+}
+
+.info td:first-child {
+    background: #d4e2f1;
+    font-weight: bold;
+    width: 38%;
+}
+
+/* PHOTO GALLERY */
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.photo {
+    background: #ddd;
+    border: 3px ridge #aaa;
+    padding: 6px;
+    text-align: center;
+}
+
+.photo img {
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+    background: #aab8c8;
+}
+
+.photo p {
+    font-size: 11px;
+    margin: 5px;
+}
+
+/* GUESTBOOK */
+
+input, textarea {
+    font-family: Arial;
+    font-size: 12px;
+    border: 2px inset #aaa;
+    padding: 5px;
+    width: 100%;
+    margin: 5px 0 12px;
+}
+
+.guestentry {
+    border-bottom: 1px dashed gray;
+    padding: 10px 0;
+    overflow-wrap: anywhere;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #c0c0c0;
+    border-top: 3px ridge white;
+    text-align: center;
+    padding: 12px;
+    font-size: 11px;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+.badge {
+    display: inline-block;
+    background: navy;
+    color: white;
+    font: bold 10px Arial;
+    border: 2px outset #aaa;
+    padding: 5px;
+    margin: 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media(max-width:600px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        border-right: none;
+        border-bottom: 3px ridge #888;
+    }
+
+    .header h1 {
+        font-size: 27px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="website">
+
+<!-- WINDOWS TITLE BAR -->
+
+<div class="titlebar">
+    <span>▣ Gales of '75 - Microsoft Internet Explorer</span>
+
+    <div class="winbuttons">
+        <span>_</span>
+        <span>□</span>
+        <span>X</span>
+    </div>
+</div>
+
+<!-- WEBSITE HEADER -->
+
+<div class="header">
+
+	<div class="anchor">
+		<img src="data:image/gif;base64,R0lGODlhHwAqAJEAAP///wAAAMDAwAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJyAACACwAAAAAHwAqAEACgpSPGJvtsqKcNLxnDbspY+1dGxQ2TAly3KiuXQtbLPylsbSix4RVPt3xzIBBHFE0PO5syhezuXyqkrvIdEOt6qJFB1aR7Vm3xFOYViIDR+d1u/xGW6HO+LRKV+Dzmj1fqOZU02bmcjYWNifGk3Ml5IhkQvYFNqloY2bnY5SXEXj0VgAAIfkECWQAAAAsAAAAAB8AKgBAAiOEj6nL7Q+jnLTai7PevPsPhuJIluaJpurKtu4Lx/JM1/ZXAAA7" alt="Anchor GIF">
+</div>
+
+    <h1>Gales of '75</h1>
+
+    <h2>THE LEGEND OF THE GREAT LAKES</h2>
+
+    <font color="gray" size="2">
+        An Unofficial Maritime History & Memorial Website
+    </font>
+
+</div>
+
+<!-- TOP NAVIGATION -->
+
+<div class="topnav">
+
+    <button onclick="showPage('home')">HOME</button>
+    <button onclick="showPage('history')">HISTORY</button>
+    <button onclick="showPage('voyage')">FINAL VOYAGE</button>
+    <button onclick="showPage('gallery')">PHOTOS</button>
+    <button onclick="showPage('guestbook')">GUESTBOOK</button>
+
+</div>
+
+<div class="announcement">
+
+<marquee scrollamount="3">
+WELCOME TO GALES OF '75!
+*** REMEMBERING THE 29 MEN LOST ON NOVEMBER 10, 1975 ***
+THANK YOU FOR VISITING MY WEBSITE!
+</marquee>
+
+</div>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div class="sideheader">SITE NAVIGATION</div>
+
+<button class="navbutton" onclick="showPage('home')">
+🏠 Main Page
+</button>
+
+<button class="navbutton" onclick="showPage('history')">
+📖 Ship History
+</button>
+
+<button class="navbutton" onclick="showPage('voyage')">
+⚓ Final Voyage
+</button>
+
+<button class="navbutton" onclick="showPage('crew')">
+✝ The Crew
+</button>
+
+<button class="navbutton" onclick="showPage('gallery')">
+▣ Photo Gallery
+</button>
+
+<button class="navbutton" onclick="showPage('links')">
+🌐 Related Links
+</button>
+
+<button class="navbutton" onclick="showPage('guestbook')">
+✎ Guestbook
+</button>
+
+<div class="sidebox">
+
+<h4>VISITOR COUNTER</h4>
+
+You are visitor number:
+
+<br><br>
+
+<div class="counter" id="counter">000001</div>
+
+<p>Since November 1999*</p>
+
+</div>
+
+<div class="sidebox">
+
+<span class="new">NEW!</span>
+
+<p><b>PHOTO GALLERY</b></p>
+
+<p>Check out the collection of Fitzgerald photographs!</p>
+
+<a href="#gallery" onclick="showPage('gallery')">
+CLICK HERE!
+</a>
+
+</div>
+
+<div class="sidebox">
+
+<h4>WEBMASTER</h4>
+
+<p>Questions? Comments?</p>
+
+<a href="#guestbook" onclick="showPage('guestbook')">
+Sign my Guestbook!
+</a>
+
+</div>
+
+<div class="sidebox">
+
+<font color="blue">
+<b>BEST VIEWED WITH</b>
+</font>
+
+<p>Internet Explorer 5.0</p>
+
+<p>800 x 600 Resolution</p>
+
+<div class="badge">IE 5.0</div>
+
+</div>
+
+</div>
+
+<!-- MAIN PAGE AREA -->
+
+<div class="main">
+
+<!-- HOME -->
+
+<section id="home" class="page">
+
+<h2>Welcome to the Edmund Fitzgerald Homepage!</h2>
+
+<center>
+
+<font color="red">
+<b>*** WELCOME, LANDLUBBER! ***</b>
+</font>
+
+</center>
+
+<p>
+Welcome to Gales of '75, a website dedicated
+to preserving the history and memory of one of the most
+famous ships ever to sail the Great Lakes.
+</p>
+
+<img
+class="shipphoto"
+src="https://commons.wikimedia.org/wiki/Special:FilePath/Edmund_Fitzgerald%2C_1971%2C_3_of_4_(restored%3B_cropped).jpg"
+alt="SS Edmund Fitzgerald">
+
+<div class="caption">
+The SS Edmund Fitzgerald.
+</div>
+
+<div class="box">
+
+<div class="box-title">
+LATEST SITE NEWS
+</div>
+
+<p>
+<span class="new">NEW!</span>
+Welcome to the homepage! Browse the ship's history,
+final voyage timeline, photographs, and memorial section.
+</p>
+
+<p>
+This website is a personal tribute to the ship and
+her crew.
+</p>
+
+</div>
+
+<h3>About the Edmund Fitzgerald</h3>
+
+<p>
+The SS Edmund Fitzgerald was an American Great Lakes
+freighter launched in 1958.
+</p>
+
+<p>
+At 729 feet in length, she was the largest ship on the
+Great Lakes when she entered service.
+</p>
+
+<p>
+On November 10, 1975, the Fitzgerald sank in Lake Superior
+during a severe storm, taking all 29 crew members with her.
+</p>
+
+<p>
+Her story continues to be remembered by maritime historians,
+Great Lakes enthusiasts, and people around the world.
+</p>
+
+<center>
+
+<font color="red">
+<b>THIS WEBSITE IS UNDER CONSTRUCTION!</b>
+</font>
+
+<p style="font-size:28px"></p>
+
+</center>
+
+</section>
+
+<!-- HISTORY -->
+
+<section id="history" class="page hidden">
+
+<h2>History of the Mighty Fitz</h2>
+
+<p>
+The SS Edmund Fitzgerald was built by Great Lakes Engineering
+Works in River Rouge, Michigan.
+</p>
+
+<p>
+She was launched on June 7, 1958, and named after
+Edmund Fitzgerald, then president of Northwestern Mutual
+Life Insurance Company.
+</p>
+
+<div class="box">
+
+<div class="box-title">
+SHIP INFORMATION
+</div>
+
+<table class="info">
+
+<tr>
+<td>Name</td>
+<td>SS Edmund Fitzgerald</td>
+</tr>
+
+<tr>
+<td>Launched</td>
+<td>June 7, 1958</td>
+</tr>
+
+<tr>
+<td>Length</td>
+<td>729 feet</td>
+</tr>
+
+<tr>
+<td>Type</td>
+<td>Great Lakes Bulk Freighter</td>
+</tr>
+
+<tr>
+<td>Primary Cargo</td>
+<td>Taconite / Iron Ore Pellets</td>
+</tr>
+
+<tr>
+<td>Lost</td>
+<td>November 10, 1975</td>
+</tr>
+
+<tr>
+<td>Crew</td>
+<td>29</td>
+</tr>
+
+</table>
+
+</div>
+
+<p>
+For seventeen years, the Fitzgerald transported iron ore
+across the Great Lakes, becoming a familiar sight at
+industrial ports throughout the region.
+</p>
+
+</section>
+
+<!-- FINAL VOYAGE -->
+
+<section id="voyage" class="page hidden">
+
+<h2>The Final Voyage - November 1975</h2>
+
+<div class="box">
+
+<div class="box-title">
+NOVEMBER 9, 1975
+</div>
+
+<p>
+The Fitzgerald departed Superior, Wisconsin, carrying
+approximately 26,000 tons of taconite pellets.
+Her destination was Detroit, Michigan.
+</p>
+
+</div>
+
+<div class="box">
+
+<div class="box-title">
+NOVEMBER 10, 1975
+</div>
+
+<p>
+A powerful storm swept across Lake Superior.
+The Fitzgerald encountered worsening conditions
+while traveling alongside the freighter Arthur M. Anderson.
+</p>
+
+<p>
+Captain Ernest McSorley reported difficulties,
+including damage and the loss of radar capability.
+</p>
+
+<p>
+At approximately 7:10 PM, the Fitzgerald made her
+last radio communication.
+</p>
+
+<p>
+The vessel subsequently disappeared from radar.
+All 29 men aboard were lost.
+</p>
+
+</div>
+
+<p>
+The exact cause of the sinking remains debated.
+Several explanations have been proposed through
+official investigations and subsequent research.
+</p>
+
+</section>
+
+<!-- CREW -->
+
+<section id="crew" class="page hidden">
+
+<h2>Remembering the Crew</h2>
+
+<center>
+
+	<p>
+		<img src="data:image/gif;base64,R0lGODlhHwAqAJEAAP///wAAAMDAwAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJyAACACwAAAAAHwAqAEACgpSPGJvtsqKcNLxnDbspY+1dGxQ2TAly3KiuXQtbLPylsbSix4RVPt3xzIBBHFE0PO5syhezuXyqkrvIdEOt6qJFB1aR7Vm3xFOYViIDR+d1u/xGW6HO+LRKV+Dzmj1fqOZU02bmcjYWNifGk3Ml5IhkQvYFNqloY2bnY5SXEXj0VgAAIfkECWQAAAAsAAAAAB8AKgBAAiOEj6nL7Q+jnLTai7PevPsPhuJIluaJpurKtu4Lx/JM1/ZXAAA7" alt="Anchor GIF" style="width: 40px; height: 40px; object-fit: contain;">
+</p>
+
+<h3>IN MEMORY OF THE 29</h3>
+
+<p>
+November 10, 1975
+</p>
+
+</center>
+
+<p>
+Twenty-nine men lost their lives aboard the
+SS Edmund Fitzgerald.
+</p>
+
+<p>
+This website is dedicated to their memory and to
+the families who remember them.
+</p>
+
+<div class="box">
+
+<div class="box-title">
+A MOMENT OF REMEMBRANCE
+</div>
+
+<center>
+
+	<center>
+		<p>May their names and their story never be forgotten.</p>
+		<p>✦ ✦ ✦</p>
+
+		<div style="display: inline-block; text-align: center; margin-top: 10px; font-size: 14px; line-height: 1.6; color: #222222;">
+			<b>Officers</b>
+			<br>
+				Ernest M. McSorley – Captain (Age 62)<br>
+					John H. McCarthy – First Mate (Age 62)<br>
+						James A. Pratt – Second Mate (Age 44)<br>
+							Michael E. Armagost – Third Mate (Age 37)<br>
+								<br>
+
+									<b>Engineering Crew</b>
+									<br>
+										George J. Holl – Chief Engineer (Age 60)<br>
+											Edward F. Bindon – First Assistant Engineer (Age 47)<br>
+												Fred J. Beetcher – Second Assistant Engineer (Age 56)<br>
+													Thomas E. Edwards – Third Assistant Engineer (Age 50)<br>
+														Russell G. Haskell – Second Assistant Engineer (Age 40)<br>
+															Oliver J. Champeau – Wiper (Age 41)<br>
+																Blaine H. Wilhelm – Oiler (Age 52)<br>
+																	Ralph G. Walton – Oiler (Age 58)<br>
+																		John D. Simmons – Chief Oiler (Age 62)<br>
+																			<br>
+
+																				<b>Deck Crew</b>
+																				<br>
+																					David E. Weiss – Cadet (Age 22)<br>
+																						Walter J. Andrew – Watchman (Age 50)<br>
+																							Peter P. Pulcer – Watchman (Age 53)<br>
+																								William J. Spengler – Watchman (Age 59)<br>
+																									John J. Poviach – Wheelsman (Age 59)<br>
+																										Ransom E. Cundy – Wheelsman (Age 53)<br>
+																											Karl A. Peckol – Watchman (Age 20)<br>
+																												Mark A. Thomas – Deck Hand (Age 21)<br>
+																													Paul M. Riippa – Deck Hand (Age 22)<br>
+																														Bruce L. Hudson – Deck Hand (Age 22)<br>
+																															<br>
+
+																																<b>Galley Crew</b>
+																																<br>
+																																	Robert C. Rafferty – Steward (Age 62)<br>
+																																		Allen G. Kalmon – Second Cook (Age 43)<br>
+																																			Joseph W. Mazes – Special Maintenance Man (Age 59)<br>
+																																				Thomas Bentsen – Oiler (Age 23)<br>
+																																					Thomas D. Borgeson – Maintenance Man (Age 41)<br>
+        Nolan F. Church – Porter (Age 32)
+    </div>
+	</center>
+
+</section>
+
+<!-- PHOTO GALLERY -->
+
+<section id="gallery" class="page hidden">
+
+<h2>Fitzgerald Photo Gallery</h2>
+
+<p>
+Welcome to the photo gallery! Click the photographs
+to view the full-size versions on Wikimedia Commons.
+</p>
+
+<div class="gallery">
+
+<div class="photo">
+
+<a href="https://commons.wikimedia.org/wiki/Special:FilePath/Edmund_Fitzgerald%2C_1971%2C_3_of_4_(restored%3B_cropped).jpg" target="_blank" rel="noopener">
+
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Edmund_Fitzgerald%2C_1971%2C_3_of_4_(restored%3B_cropped).jpg" alt="Edmund Fitzgerald">
+
+</a>
+
+<p>The Mighty Fitz</p>
+
+</div>
+
+	<div class="photo">
+		<a href="https://commons.wikimedia.org/w/index.php?search=Edmund+Fitzgerald&title=Special%3AMediaSearch&type=image" target="_blank" rel="noopener">
+			<img src="data:image/gif;base64,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" alt="Browse More Ship Photos" style="width: 60px; height: 60px; object-fit: contain; margin: 30px auto; display: block;">
+    </a>
+		<p>Browse More Ship Photos</p>
+	</div>
+
+	<div class="photo">
+		<a href="https://commons.wikimedia.org/wiki/Category:Edmund_Fitzgerald_(ship,_1958)" target="_blank" rel="noopener">
+			<img src="data:image/gif;base64,R0lGODlhHwAqAJEAAP///wAAAMDAwAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJyAACACwAAAAAHwAqAEACgpSPGJvtsqKcNLxnDbspY+1dGxQ2TAly3KiuXQtbLPylsbSix4RVPt3xzIBBHFE0PO5syhezuXyqkrvIdEOt6qJFB1aR7Vm3xFOYViIDR+d1u/xGW6HO+LRKV+Dzmj1fqOZU02bmcjYWNifGk3Ml5IhkQvYFNqloY2bnY5SXEXj0VgAAIfkECWQAAAAsAAAAAB8AKgBAAiOEj6nL7Q+jnLTai7PevPsPhuJIluaJpurKtu4Lx/JM1/ZXAAA7" alt="Historical Image Archive" style="width: 60px; height: 60px; object-fit: contain; margin: 30px auto; display: block;">
+    </a>
+		<p>Historical Image Archive</p>
+	</div>
+
+	<div class="photo">
+		<a href="https://www.shipwreckmuseum.com/" target="_blank" rel="noopener">
+			<img src="data:image/gif;base64,R0lGODlhEAAQAKIAAP///87v/3PO/2O9/wCc/wiE9zFjzv///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQJFAAHACwAAAEAEAAPAAADUXi6HBKByRUIeVNBQTSJk0MMw2FU2ccIRieBBGAMjjF9QHAGNCjZBx3tlKEMTgRgpnLkuUKW46ykoFai0lZhW+ANsIZwmFsgccdiA3ldELcNCQAh+QQJFAAHACwAAAAAEAAQAAADUXiqIRErykCIk+sJwgjEDTEMh0FhhxcJhhp9BGAMjSl5QGAGtI4ZjJmOx0HxTIRZ5ZMRmQZJaLHjnI1aRUrlasAOWiMpt4vtjsnosjnNbrvRCQAh+QQJFAAHACwAAAIAEAAOAAADRRgScf7QBUJWvESSdt8YhzF1l2Bs5AEYgyKmYtAGRkq34pB1skiwFA6EMMj9dLthkfU5ESNNg7NIrO2WUqe0is1mKV9wAgAh+QQJFAAHACwAAAkAEAAHAAADIEi33E4kuLkGpNPAwXHVFsdBJKkZg1asLAudxFAQq8wmACH5BAUUAAcALAAADQAQAAMAAAMHWLrc/jCuBAAh+QQJFAAHACwAAAMAEAANAAADKni6vCGhSRUIme5d7AQZA6cQkUiNhxFi5BEYQYkZlGpSA92sa5XfwCAnAQA7" alt="Great Lakes Shipwreck Museum" style="width: 60px; height: 60px; object-fit: contain; margin: 30px auto; display: block;">
+  </a>
+		<p>Great Lakes Shipwreck Museum</p>
+	</div>
+
+</div>
+
+<p class="caption">
+Photographs and historical resources are hosted externally.
+</p>
+
+</section>
+
+<!-- LINKS -->
+
+<section id="links" class="page hidden">
+
+<h2>Great Lakes Links</h2>
+
+<p>
+Here are some interesting websites for fellow
+maritime history enthusiasts!
+</p>
+
+<div class="box">
+
+<div class="box-title">
+COOL LINKS!
+</div>
+
+<p>
+<a href="https://www.shipwreckmuseum.com/" target="_blank" rel="noopener">
+Great Lakes Shipwreck Museum
+</a>
+</p>
+
+<p>
+<a href="https://www.noaa.gov/" target="_blank" rel="noopener">
+National Oceanic and Atmospheric Administration
+</a>
+</p>
+
+<p>
+<a href="https://commons.wikimedia.org/wiki/Category:SS_Edmund_Fitzgerald" target="_blank" rel="noopener">
+Edmund Fitzgerald Image Archive
+</a>
+</p>
+
+</div>
+
+<p>
+Know a good maritime history website?
+Leave a suggestion in the guestbook!
+</p>
+
+</section>
+
+<!-- GUESTBOOK -->
+
+<section id="guestbook" class="page hidden">
+
+<h2>Sign My Guestbook!</h2>
+
+<p>
+Thanks for visiting my website! Please leave
+your name and a message below.
+</p>
+
+<div class="box">
+
+<div class="box-title">
+GUESTBOOK ENTRY FORM
+</div>
+
+<b>Your Name:</b>
+
+<input id="guestname" maxlength="50" placeholder="Your name">
+
+<b>Your Message:</b>
+
+<textarea id="guestmessage" rows="5" maxlength="500" placeholder="Type your message here..."></textarea>
+
+<button class="oldbutton" onclick="signGuestbook()">
+SUBMIT MESSAGE
+</button>
+
+<button class="oldbutton" onclick="clearForm()">
+CLEAR FORM
+</button>
+
+</div>
+
+<h3>Previous Visitors</h3>
+
+<div id="guestentries"></div>
+
+<p style="font-size:11px;color:gray">
+Note: This demonstration guestbook saves entries locally
+in your browser. A public guestbook requires a server
+or database.
+</p>
+
+</section>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<p>
+<a href="#home" onclick="showPage('home')">HOME</a> |
+<a href="#history" onclick="showPage('history')">HISTORY</a> |
+<a href="#gallery" onclick="showPage('gallery')">PHOTOS</a> |
+<a href="#guestbook" onclick="showPage('guestbook')">GUESTBOOK</a>
+</p>
+
+<hr>
+
+<div class="badge">BEST VIEWED 800x600</div>
+<div class="badge">HTML 4.0</div>
+<div class="badge">MADE WITH NOTEPAD</div>
+<div class="badge">GREAT LAKES WEB</div>
+
+<p>
+	Gales of '75 - An Unofficial Tribute Website
+</p>
+
+<p>
+Established 1999 (in spirit) | Hand Coded HTML
+</p>
+
+<p>
+This site is not affiliated with any official maritime organization.
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+/* PAGE NAVIGATION */
+
+function showPage(id) {
+
+    document.querySelectorAll(".page").forEach(function(page) {
+        page.classList.add("hidden");
+    });
+
+    let selected = document.getElementById(id);
+
+    if (!selected || !selected.classList.contains("page")) {
+        selected = document.getElementById("home");
+        id = "home";
+    }
+
+    selected.classList.remove("hidden");
+
+    location.hash = id;
+
+    if (id === "guestbook") {
+        loadGuestbook();
+    }
+
+    window.scrollTo(0, 0);
+}
+
+/* VISITOR COUNTER */
+
+let visits = Number(localStorage.getItem("fitzVisits") || 0);
+
+visits++;
+
+localStorage.setItem("fitzVisits", visits);
+
+document.getElementById("counter").textContent =
+    String(visits).padStart(6, "0");
+
+/* GUESTBOOK */
+
+function signGuestbook() {
+
+    let name = document.getElementById("guestname").value.trim();
+
+    let message = document.getElementById("guestmessage").value.trim();
+
+    if (name === "" || message === "") {
+        alert("Please enter your name and a message!");
+        return;
+    }
+
+    let entries = JSON.parse(
+        localStorage.getItem("fitzGuestbook") || "[]"
+    );
+
+    entries.unshift({
+        name: name,
+        message: message,
+        date: new Date().toLocaleDateString()
+    });
+
+    localStorage.setItem(
+        "fitzGuestbook",
+        JSON.stringify(entries.slice(0, 100))
+    );
+
+    clearForm();
+
+    loadGuestbook();
+
+    alert("Thank you for signing my guestbook!");
+}
+
+function clearForm() {
+
+    document.getElementById("guestname").value = "";
+
+    document.getElementById("guestmessage").value = "";
+}
+
+function loadGuestbook() {
+
+    let entries = JSON.parse(
+        localStorage.getItem("fitzGuestbook") || "[]"
+    );
+
+    let container = document.getElementById("guestentries");
+
+    container.replaceChildren();
+
+    if (entries.length === 0) {
+        container.textContent = "No entries yet. Be the first to sign!";
+        return;
+    }
+
+    entries.forEach(function(entry) {
+
+        let div = document.createElement("div");
+
+        div.className = "guestentry";
+
+        let heading = document.createElement("b");
+        heading.textContent = entry.name + " - " + entry.date;
+
+        let message = document.createElement("p");
+        message.textContent = entry.message;
+
+        div.append(heading, message);
+
+        container.appendChild(div);
+
+    });
+
+}
+
+/* INITIAL PAGE */
+
+let initialPage = location.hash.replace("#", "") || "home";
+
+showPage(initialPage);
+
+</script>
+
+</body>
+</html>
